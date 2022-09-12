@@ -16,7 +16,7 @@ export function addComponents(elType, className, text) {
 // Add the different HTML Content
 
 export const headerHTML = `
-<div>BOLT<img class="logo" src="" alt=""></div>
+<div><img class="logo" src="../dist/imgs/logobolt.jpg" alt="logo"></div>
 <ul class="nav-btns">
     <li>Home</li>
     <li>About</li>
@@ -58,3 +58,24 @@ export const aboutBoltHTML = `
   only €6.
 </div>
 `;
+
+export const findUsHTML = `<div class="form-container">
+<form id="form">
+  <div class="form-title">Contact Us</div>
+  <label for="name">Name</label>
+  <input type="text" id="name" />
+  <label for="number">Phone Number</label>
+  <input type="number" id="number" />
+  <label for="email">Email</label>
+  <input type="text" id="email" />
+  <div class="q-text">Please let us know your query...</div>
+  <textarea
+    name="query"
+    id="query"
+    cols="20"
+    rows="5"
+    placeholder="I would like to book a party for my son. There will be 15 children, on the 7th of October at 7pm. Is that okay?"
+  ></textarea>
+  <input class="submit-btn" type="submit" ></input>
+</form>
+</div>`;

@@ -4,6 +4,7 @@ import {
   copyContainerHTML,
   content,
   aboutBoltHTML,
+  findUsHTML,
 } from "./html.js";
 import "./style.css";
 
@@ -15,8 +16,13 @@ import "./style.css";
 //   addComponents("div", "footer", "Copyright ⓒ Bolt 2022");
 // });
 
-// document.body.style.backgroundImage = "none";
+document.body.style.backgroundImage = "none";
+// addComponents("div", "header", headerHTML);
+// addComponents("div", "about-container", aboutBoltHTML);
+// addComponents("div", "footer", "Copyright ⓒ Bolt 2022");
+document.body.style.backgroundImage =
+  "linear-gradient(rgb(228, 255, 245), rgb(95, 248, 95))";
+
 addComponents("div", "header", headerHTML);
-addComponents("div", "about-container", aboutBoltHTML);
+addComponents("div", "find-us-container", findUsHTML);
 addComponents("div", "footer", "Copyright ⓒ Bolt 2022");
-// document.body.style.backgroundColor = "rgb(207, 255, 208)";
