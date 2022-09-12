@@ -48,7 +48,6 @@ li:hover {
 }
 
 .footer {
-  position: absolute;
   bottom: 0;
   width: 100vw;
   text-align: center;
@@ -134,7 +133,7 @@ form {
   justify-content: center;
   width: 80vw;
   background-color: rgb(244, 251, 246);
-  padding: 20px;
+  padding: 10px 2vw;
   border-radius: 5px;
   font-size: 0.8rem;
   border: 1px solid navy;
@@ -166,4 +165,34 @@ input {
 }
 .submit-btn:hover {
   background-color: rgb(219, 255, 229);
+}
+
+.address-container {
+  display: flex;
+  width: 84vw;
+  gap: 25px;
+  margin: 2rem auto;
+}
+
+.map,
+.address {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.address {
+  background-color: rgb(244, 251, 246);
+  line-height: 20px;
+  padding: 1rem;
+}
+
+.contact-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.end-logo {
+  text-align: center;
+  margin-top: 2rem;
 }

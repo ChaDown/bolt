@@ -78,4 +78,17 @@ export const findUsHTML = `<div class="form-container">
   ></textarea>
   <input class="submit-btn" type="submit" ></input>
 </form>
+</div>
+<div class="address-container">
+<div class="map"><iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3135.8049074285655!2d-0.5638386842844106!3d38.191205595863174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd624d71b7ed5359%3A0xb4754cb4048c39c6!2sBOLT%20Hinchable!5e0!3m2!1sen!2sie!4v1662998487909!5m2!1sen!2sie"
+width="500"
+height="400"
+style="border: 0"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade"
+></iframe></div>
+<div class="address"><div class="contact-title">Contact Details</div><br>Come visit BOLT at: <br><br>
+Bolt Hinchable, Puerto Maritimo, Santa Pola, Spain 03130. <br> <br> We're on a terrace above Lizzarran restaurant<br><br> Phone Number: 646123456<br><div class="end-logo"><img class="logo" src="../dist/imgs/logobolt.jpg" alt="logo"></div></div>
 </div>`;

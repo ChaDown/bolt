@@ -26,3 +26,8 @@ document.body.style.backgroundImage =
 addComponents("div", "header", headerHTML);
 addComponents("div", "find-us-container", findUsHTML);
 addComponents("div", "footer", "Copyright ⓒ Bolt 2022");
+
+function initMap() {
+  //Bolt coordinates
+  const boltCoords = {};
+}
