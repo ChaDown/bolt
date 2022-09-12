@@ -1,0 +1,27 @@
+{
+  "name": "bolt-tab-page",
+  "version": "1.0.0",
+  "description": "Bolt Hinchable Santa Pola",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ChaDown/bolt.git"
+  },
+  "author": "Charlie Downes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChaDown/bolt/issues"
+  },
+  "homepage": "https://github.com/ChaDown/bolt#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.0"
+  }
+}
