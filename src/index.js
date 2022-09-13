@@ -5,29 +5,67 @@ import {
   content,
   aboutBoltHTML,
   findUsHTML,
+  //bodyContent,
 } from "./html.js";
 import "./style.css";
 
-//Add Home Page
+const addListeners = function () {
+  // To go to Home tab
+  const homeNavBtn = document.querySelector(".home");
+  const logo = document.querySelector(".logo");
 
-// window.addEventListener("load", () => {
-//   addComponents("div", "header", headerHTML);
-//   //   addComponents("div", "copy-container", copyContainerHTML);
-//   addComponents("div", "footer", "Copyright ⓒ Bolt 2022");
-// });
+  const goHomeBtns = [homeNavBtn, logo];
 
-document.body.style.backgroundImage = "none";
-// addComponents("div", "header", headerHTML);
-// addComponents("div", "about-container", aboutBoltHTML);
-// addComponents("div", "footer", "Copyright ⓒ Bolt 2022");
-document.body.style.backgroundImage =
-  "linear-gradient(rgb(228, 255, 245), rgb(95, 248, 95))";
+  goHomeBtns.forEach((btn) =>
+    btn ? btn.addEventListener("click", renderHome) : ""
+  );
 
-addComponents("div", "header", headerHTML);
-addComponents("div", "find-us-container", findUsHTML);
-addComponents("div", "footer", "Copyright ⓒ Bolt 2022");
+  // To go to About tab
+  const aboutNavBtn = document.querySelector(".about");
+  const exploreBtn = document.querySelector(".explore-btn");
+  const goAboutBtns = [aboutNavBtn, exploreBtn];
 
-function initMap() {
-  //Bolt coordinates
-  const boltCoords = {};
+  goAboutBtns.forEach((btn) =>
+    btn ? btn.addEventListener("click", renderAbout) : ""
+  );
+
+  //To go to Find Us tab
+  const findUsNavBtn = document.querySelector(".find-us");
+  const clickHereBtn = document.querySelector(".find-us-here");
+  const bookNowBtn = document.querySelector(".book-now");
+
+  const findUsBtns = [findUsNavBtn, clickHereBtn, bookNowBtn];
+
+  findUsBtns.forEach((btn) =>
+    btn ? btn.addEventListener("click", renderFindUs) : ""
+  );
+};
+
+function renderHome() {
+  document.body.style.backgroundImage = `url("../dist/imgs/bolt.jpeg")`;
+  content.innerHTML = "";
+  renderHeader();
+  addComponents("div", "copy-container", copyContainerHTML);
+  addListeners();
 }
+
+function renderHeader() {
+  content.innerHTML = "";
+  addComponents("div", "header", headerHTML);
+}
+
+function renderAbout() {
+  document.body.style.backgroundImage = `url("../dist/imgs/bolt.jpeg")`;
+  renderHeader();
+  addComponents("div", "about-container", aboutBoltHTML);
+  addListeners();
+}
+
+function renderFindUs() {
+  document.body.style.backgroundImage = `url("../dist/imgs/party.jpg")`;
+  renderHeader();
+  addComponents("div", "find-us-container", findUsHTML);
+  addListeners();
+}
+
+window.addEventListener("load", renderHome());

@@ -1,10 +1,6 @@
-export const content = document.querySelector(".content");
+export const content = document.querySelector("#content");
 
 // Add helper functions
-
-function appendContent(element) {
-  content.appendChild(`${element}`);
-}
 
 export function addComponents(elType, className, text) {
   const el = document.createElement(`${elType}`);
@@ -18,21 +14,21 @@ export function addComponents(elType, className, text) {
 export const headerHTML = `
 <div><img class="logo" src="../dist/imgs/logobolt.jpg" alt="logo"></div>
 <ul class="nav-btns">
-    <li>Home</li>
-    <li>About</li>
-    <li>Find Us</li>
+    <li class="home">Home</li>
+    <li class="about">About</li>
+    <li class="find-us">Find Us</li>
 </ul>
 `;
 
 export const copyContainerHTML = `
 <div class="copy-modal">Welcome to BOLT! <br> For Kids Who Want to Have Fun, and Parents Who Want to Relax! <br>
-<button class="book-btn">Explore BOLT!</button></div>
+<button class="explore-btn">Explore BOLT!</button></div>
 `;
 
 export const aboutBoltHTML = `
 
 <div class="location grid">
-  To find or contact us click &nbsp <button class="find-us">Here!</button>
+  To find or contact us click &nbsp <button class="find-us-here">Here!</button>
 </div>
 <div class="grid layout-container"><img class="layout" src="../dist/imgs/BOLTLayout.jpeg" alt="layout" /></div>
 <div class="bolt-info grid">
