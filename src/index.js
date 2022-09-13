@@ -1,11 +1,11 @@
 import {
-  addComponents,
   headerHTML,
   copyContainerHTML,
   content,
   aboutBoltHTML,
   findUsHTML,
-  //bodyContent,
+  addComponents,
+  renderHeader,
 } from "./html.js";
 import "./style.css";
 
@@ -13,7 +13,6 @@ const addListeners = function () {
   // To go to Home tab
   const homeNavBtn = document.querySelector(".home");
   const logo = document.querySelector(".logo");
-
   const goHomeBtns = [homeNavBtn, logo];
 
   goHomeBtns.forEach((btn) =>
@@ -47,11 +46,6 @@ function renderHome() {
   renderHeader();
   addComponents("div", "copy-container", copyContainerHTML);
   addListeners();
-}
-
-function renderHeader() {
-  content.innerHTML = "";
-  addComponents("div", "header", headerHTML);
 }
 
 function renderAbout() {
