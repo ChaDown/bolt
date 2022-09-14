@@ -3,7 +3,7 @@ export const content = document.querySelector("#content");
 // Add the different HTML Content
 
 export const headerHTML = `
-<div><img class="logo" src="../dist/imgs/logobolt.jpg" alt="logo"></div>
+<div><img class="logo" src="imgs/logobolt.jpg" alt="logo"></div>
 <ul class="nav-btns">
     <li class="home">Home</li>
     <li class="about">About</li>
@@ -21,7 +21,7 @@ export const aboutBoltHTML = `
 <div class="location grid">
   To find or contact us click &nbsp <button class="find-us-here">Here!</button>
 </div>
-<div class="grid layout-container"><img class="layout" src="/bolt/main/dist/imgs/BOLTLayout.jpeg" alt="layout" /></div>
+<div class="grid layout-container"><img class="layout" src="imgs/BOLTLayout.jpeg" alt="layout" /></div>
 <div class="bolt-info grid">
 <br>
 <strong>What is BOLT? </strong><br />
@@ -77,5 +77,5 @@ loading="lazy"
 referrerpolicy="no-referrer-when-downgrade"
 ></iframe></div>
 <div class="address"><div class="contact-title">Contact Details</div><br>Come visit BOLT at: <br><br>
-Bolt Hinchable, Puerto Maritimo, Santa Pola, Spain 03130. <br> <br> We're on a terrace above Lizzarran restaurant<br><br> Phone Number: 646123456<br><div class="end-logo"><img class="logo" src="../dist/imgs/logobolt.jpg" alt="logo"></div></div>
+Bolt Hinchable, Puerto Maritimo, Santa Pola, Spain 03130. <br> <br> We're on a terrace above Lizzarran restaurant<br><br> Phone Number: 646123456<br><div class="end-logo"><img class="logo" src="imgs/logobolt.jpg" alt="logo"></div></div>
 </div>`;

@@ -8,7 +8,7 @@ import { addComponents, renderHeader } from "./helpers.js";
 import { addListeners } from "./index.js";
 
 export function renderHome() {
-  document.body.style.backgroundImage = `url("../dist/imgs/bolt.jpeg")`;
+  document.body.style.backgroundImage = `url("imgs/bolt.jpeg")`;
   content.innerHTML = "";
   renderHeader();
   addComponents("div", "copy-container", copyContainerHTML);
@@ -16,14 +16,14 @@ export function renderHome() {
 }
 
 export function renderAbout() {
-  document.body.style.backgroundImage = `url("../dist/imgs/bolt.jpeg")`;
+  document.body.style.backgroundImage = `url("imgs/bolt.jpeg")`;
   renderHeader();
   addComponents("div", "about-container", aboutBoltHTML);
   addListeners();
 }
 
 export function renderFindUs() {
-  document.body.style.backgroundImage = `url("../dist/imgs/party.jpg")`;
+  document.body.style.backgroundImage = `url("imgs/party.jpg")`;
   renderHeader();
   addComponents("div", "find-us-container", findUsHTML);
   addListeners();
