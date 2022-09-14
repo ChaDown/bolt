@@ -21,7 +21,7 @@ export const aboutBoltHTML = `
 <div class="location grid">
   To find or contact us click &nbsp <button class="find-us-here">Here!</button>
 </div>
-<div class="grid layout-container"><img class="layout" src="https://github.com/ChaDown/bolt/blob/main/dist/imgs/BOLTLayout.jpeg" alt="layout" /></div>
+<div class="grid layout-container"><img class="layout" src="/bolt/main/dist/imgs/BOLTLayout.jpeg" alt="layout" /></div>
 <div class="bolt-info grid">
 <br>
 <strong>What is BOLT? </strong><br />
