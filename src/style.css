@@ -90,7 +90,7 @@ button:hover {
 .about-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 6fr 4fr;
+  grid-template-rows: 1fr 6fr fit-content(4fr);
   gap: 20px;
   margin: 0px 50px;
   height: 80vh;
