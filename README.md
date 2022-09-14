@@ -1,1 +1,1 @@
-# bolt
+This is a webpage for BOLT Santa Pola. The main purpose of this page is to dynamically render HTML content using modules. Logic was implmented allowing the HTML to dynamically render based on events on the page.
